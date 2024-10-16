@@ -36,4 +36,15 @@ public class Punto {
     public Punto(double x){
         setX(x);
     }
+
+    public String toString(){
+        return "["+x+", "+y+"]";
+    }
+    public boolean equals(Punto p){
+        if (this.x == p.x && this.y == p.y){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
